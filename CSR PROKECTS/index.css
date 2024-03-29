@@ -1,0 +1,11 @@
+.nav-bar {
+  display: flex; /* Use flexbox to align items horizontally */
+}
+
+.nav-bar a {
+  margin-right: 40px; /* Add margin to the right of each link */
+}
+
+.nav-bar a {
+  margin: 0 60px; /* Add margin to both sides of each link */
+}
