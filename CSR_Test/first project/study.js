@@ -6,6 +6,8 @@
 
 console.log("We are ready to go and win")
 console.log("be there")
+console.log("be there now")
+
 
 // //function expression
 // const age2 = function(birthAge){
