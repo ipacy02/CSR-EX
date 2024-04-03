@@ -7,3 +7,4 @@ mediaButton.addEventListener('click', function (e) {
 	mediaButton.classList.toggle('fa-xmark');
 	navItems.classList.toggle('show-list');
 });
+  
