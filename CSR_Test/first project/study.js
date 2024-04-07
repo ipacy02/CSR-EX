@@ -6,7 +6,10 @@
 
 console.log("We are ready to go and win")
 console.log("be there")
-console.log("be there now")
+console.log("be there now") 
+console.log("be there now use it") 
+
+
 
 
 // //function expression
