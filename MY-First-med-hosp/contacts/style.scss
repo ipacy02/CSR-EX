@@ -1,0 +1,242 @@
+@import url(href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root{
+    --background: #ED215E;
+    --primary_color: #ED215E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    padding-inline: 8%;
+}
+
+.hero{
+    padding-inline: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(photos/back-photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+
+    .contents{
+        
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .block-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                color: #fff;
+                text-align: center;
+
+                h2{
+                    
+                    font-size: 40px; 
+                }
+                p{
+                    margin-block: 20px;
+                }
+              
+
+        }
+        .hero-ct{
+            width: 400px;
+            position: absolute;
+            left:8%;
+            bottom: 70px;
+            background: white;
+            padding: 10px;            
+          
+
+        }
+    }
+
+
+    nav{
+        padding-inline: 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+
+              
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:20px;
+            li{
+                list-style: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    transition: .5s;
+                }
+                a:hover{
+                    color: var(--primary_color);
+                }
+            }
+
+        }
+
+    }
+   
+   
+}
+
+.contact-form{
+    width: 100%;
+    padding-block: 40px;
+    display: grid;
+    gap: 40px;
+
+    h2{
+        color: #ED215E;
+    }
+    
+    .intro{
+        
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        gap: 10px;
+        
+    }
+    .form{
+        display: grid;
+        grid-template-columns: 4fr 8fr; 
+        gap: 40px;  
+            
+        .content{
+        display: grid;
+        background:  rgba(255, 192, 203, 0.4);
+        padding: 15px 20px;
+        gap: 5px;
+  
+
+        .box{
+           width: 80px;
+           height: 80px;
+           background: white;
+           border-radius: 12px;
+           
+        }
+    }
+    .spanCols{
+        grid-column: span 2;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 10px;
+
+        img{
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 4px;
+            top: 3px;
+            transform: translate(0,50%);
+            
+            
+        }
+        .input-grp{
+            position: relative;
+            input{
+                width: 100%;
+                height: 30px;
+                font-size: 14px;
+                padding-left: 20px;
+            }
+
+            .space{
+                margin-right: 3;
+            }
+            textarea{
+                padding-inline: 20px;
+                padding-block: 5px;
+                width: 100%;
+                resize: none;
+
+            }
+            button{
+                width: 100%;
+                height: 50px;
+                background: #ED215E;
+                color: white;
+                border-radius: 8px;
+                border: none;
+            }
+
+        }
+
+
+    }
+
+}
+
+}
+footer{
+    padding-block: 30px;
+    .contents{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        gap: 30px;
+
+        .card1{
+            display: flex;
+            flex-direction: column;
+            gap:10px
+
+
+        }
+        .holdercards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            .card{
+               display: flex;
+               flex-direction: column;
+               gap: 15px;
+
+               ul{
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+               }
+               
+
+            }
+
+        }
+     
+    }
+
+}

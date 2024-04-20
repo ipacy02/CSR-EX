@@ -1,0 +1,193 @@
+@import url(href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --background: #ED215E;
+  --primary_color: #ED215E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding-inline: 8%;
+}
+
+.hero {
+  padding-inline: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photos/back-photo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.hero .contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero .contents .block-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+}
+.hero .contents .block-content h2 {
+  font-size: 40px;
+}
+.hero .contents .block-content p {
+  margin-block: 20px;
+}
+.hero .contents .hero-ct {
+  width: 400px;
+  position: absolute;
+  left: 8%;
+  bottom: 70px;
+  background: white;
+  padding: 10px;
+}
+.hero nav {
+  padding-inline: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.hero nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.hero nav ul li {
+  list-style: none;
+}
+.hero nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.hero nav ul li a:hover {
+  color: var(--primary_color);
+}
+
+.contact-form {
+  width: 100%;
+  padding-block: 40px;
+  display: grid;
+  gap: 40px;
+}
+.contact-form h2 {
+  color: #ED215E;
+}
+.contact-form .intro {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 10px;
+}
+.contact-form .form {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 40px;
+}
+.contact-form .form .content {
+  display: grid;
+  background: rgba(255, 192, 203, 0.4);
+  padding: 15px 20px;
+  gap: 5px;
+}
+.contact-form .form .content .box {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 12px;
+}
+.contact-form .form .spanCols {
+  grid-column: span 2;
+}
+.contact-form .form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+}
+.contact-form .form form img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  transform: translate(0, 50%);
+}
+.contact-form .form form .input-grp {
+  position: relative;
+}
+.contact-form .form form .input-grp input {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.contact-form .form form .input-grp .space {
+  margin-right: 3;
+}
+.contact-form .form form .input-grp textarea {
+  padding-inline: 20px;
+  padding-block: 5px;
+  width: 100%;
+  resize: none;
+}
+.contact-form .form form .input-grp button {
+  width: 100%;
+  height: 50px;
+  background: #ED215E;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+footer {
+  padding-block: 30px;
+}
+footer .contents {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 30px;
+}
+footer .contents .card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .contents .holdercards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+footer .contents .holdercards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .contents .holdercards .card ul li {
+  list-style: none;
+}
+footer .contents .holdercards .card ul li a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
